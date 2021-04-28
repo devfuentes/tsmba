@@ -3,6 +3,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: $primary-font;
+}
+
 @font-face {
   font-family: $secondary-font;
   src: url("../fonts/SaolDisplay-Light.woff2") format("woff2"),
@@ -13,9 +17,25 @@ html {
 
 @font-face {
   font-family: $secondary-font;
-  src: url("../fonts/SaolDisplay-Light.woff2") format("woff2"),
-    url("../fonts/SaolDisplay-Light.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/SaolDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/SaolDisplay-Regular.woff") format("woff");
+  font-weight: $regular-font;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $secondary-font;
+  src: url("../fonts/SaolDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/SaolDisplay-Medium.woff") format("woff");
+  font-weight: $semibold-font;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: $secondary-font;
+  src: url("../fonts/SaolDisplay-Medium.woff2") format("woff2"),
+    url("../fonts/SaolDisplay-Medium.woff") format("woff");
+  font-weight: $bold-font;
   font-style: normal;
 }
 

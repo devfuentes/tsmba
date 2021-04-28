@@ -1,0 +1,46 @@
+.nav-container {
+  background: $black;
+  padding: 3.5rem 0;
+  height: 120px;
+  display: fixed;
+
+  & .navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    & .navigation__logo {
+      width: 10%;
+      img {
+        width: 100px;
+      }
+    }
+
+    & .nav {
+      width: 100%;
+      justify-self: center;
+
+      & .nav__list {
+        width: 60%;
+        margin: 0 auto;
+        transform: translateX(-10%);
+        list-style: none;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        & .nav__link {
+          color: $light-green;
+          font-size: 1.4rem;
+          padding-bottom: 3px;
+          text-decoration: none;
+
+          &.active,
+          &:hover {
+            border-bottom: solid 1px red;
+          }
+        }
+      }
+    }
+  }
+}
