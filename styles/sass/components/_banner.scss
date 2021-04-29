@@ -1,6 +1,7 @@
 .banner {
   width: 100%;
   padding: 10rem 0;
+  margin: 0;
 
   background: $red;
   position: relative;
@@ -22,13 +23,18 @@
   & .banner__author {
     text-transform: uppercase;
     font-size: 2.3rem;
-    margin: 3rem 0 2rem 0;
+    margin: 3rem auto 2rem auto;
     position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: inline-block;
+
     &::after {
-      left: 30%;
+      right: -200px;
     }
     &::before {
-      right: 20%;
+      left: -100px;
     }
     &::after,
     &::before {

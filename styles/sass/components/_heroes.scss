@@ -1,0 +1,70 @@
+.heroes {
+  width: 100%;
+  background-color: $black;
+  padding: 8rem 0;
+
+  & .heroes__img {
+    width: 100%;
+    &.heroes__img--bottom {
+      margin-top: 4rem;
+    }
+  }
+
+  & .heroes__title {
+    font-weight: $thin-font;
+    color: $white-green;
+    font-size: 13rem;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0;
+    margin-bottom: 5rem;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50%;
+      height: 1px;
+      background: $red;
+    }
+    &::after {
+      top: 0;
+    }
+    &::before {
+      bottom: 0;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  & .heroes__info__title {
+    // width: 40%;
+    color: $green;
+    margin-right: 20px;
+  }
+
+  & .heroes__info__desc {
+    font-size: 1.8rem;
+    font-weight: $regular-font;
+    text-align: left;
+    width: 40%;
+
+    span {
+      color: $red;
+    }
+  }
+
+  & .heroes__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  & .heroes__brands {
+    margin-bottom: 8rem;
+  }
+}
