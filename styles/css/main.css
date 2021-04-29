@@ -7128,6 +7128,7 @@ h6 {
 
 .features {
   padding: 10rem 0;
+  margin: 0;
   color: #d5f2e3;
   background: #011109;
   background: linear-gradient(180deg, #011109 5%, #008081 100%);
@@ -7166,6 +7167,62 @@ h6 {
 .features .feature__list--numbers a {
   color: #a4bcb0;
   text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  padding: 10rem 0;
+  background: #b92c0a;
+  position: relative;
+  overflow: hidden;
+}
+.banner .banner__img {
+  position: absolute;
+  height: auto;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.banner .banner__content {
+  position: relative;
+  z-index: 2;
+}
+.banner .banner__author {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin: 3rem 0 2rem 0;
+  position: relative;
+}
+.banner .banner__author::after {
+  left: 30%;
+}
+.banner .banner__author::before {
+  right: 20%;
+}
+.banner .banner__author::after, .banner .banner__author::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 1px;
+  background-color: #1f271b;
+}
+.banner .banner__author, .banner .banner__company {
+  color: #1f271b;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.banner .banner__company {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+.banner .banner__title {
+  text-align: center;
+  color: #d5f2e3;
+  font-size: 4.5rem;
+  font-weight: 300;
 }
 
 .circle-list {
