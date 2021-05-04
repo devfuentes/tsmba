@@ -7067,7 +7067,7 @@ h6 {
   overflow: hidden;
 }
 .header .header__title {
-  color: #d5f2e3;
+  color: #d4f1e2;
   text-align: center;
   width: 100%;
   position: absolute;
@@ -7094,7 +7094,7 @@ h6 {
 .header .header__quote span {
   font-family: "SaolDisplay";
   font-style: italic;
-  color: #b92c0a;
+  color: #bd1025;
 }
 .header .header__desc {
   font-family: "Raleway", sans-serif;
@@ -7113,11 +7113,11 @@ h6 {
   letter-spacing: 0.5rem;
 }
 .btn.btn--primary {
-  background: #b92c0a;
+  background: #bd1025;
   border: 0;
 }
 .btn.btn--primary:hover {
-  background: #b92c0a;
+  background: #bd1025;
   color: #a4bcb0;
 }
 .btn:hover {
@@ -7129,7 +7129,7 @@ h6 {
 .features {
   padding: 10rem 0;
   margin: 0;
-  color: #d5f2e3;
+  color: #d4f1e2;
   background: #011109;
   background: linear-gradient(180deg, #011109 5%, #008081 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011109",endColorstr="#008081",GradientType=1);
@@ -7173,7 +7173,7 @@ h6 {
   width: 100%;
   padding: 10rem 0;
   margin: 0;
-  background: #b92c0a;
+  background: #bd1025;
   position: relative;
   overflow: hidden;
 }
@@ -7210,10 +7210,10 @@ h6 {
   transform: translate(-50%, -50%);
   width: 100px;
   height: 1px;
-  background-color: #1f271b;
+  background-color: #272727;
 }
 .banner .banner__author, .banner .banner__company {
-  color: #1f271b;
+  color: #272727;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
@@ -7224,7 +7224,7 @@ h6 {
 }
 .banner .banner__title {
   text-align: center;
-  color: #d5f2e3;
+  color: #d4f1e2;
   font-size: 4.5rem;
   font-weight: 300;
 }
@@ -7232,7 +7232,7 @@ h6 {
 .heroes {
   width: 100%;
   background-color: #011109;
-  padding: 8rem 0;
+  padding: 8rem 0 0 0;
   margin: 0;
 }
 .heroes .heroes__img {
@@ -7243,7 +7243,7 @@ h6 {
 }
 .heroes .heroes__title {
   font-weight: 100;
-  color: #d5f2e3;
+  color: #d4f1e2;
   font-size: 13rem;
   text-align: center;
   position: relative;
@@ -7257,7 +7257,7 @@ h6 {
   transform: translateX(-50%);
   width: 50%;
   height: 1px;
-  background: #b92c0a;
+  background: #bd1025;
 }
 .heroes .heroes__title::after {
   top: 0;
@@ -7279,7 +7279,7 @@ h6 {
   width: 40%;
 }
 .heroes .heroes__info__desc span {
-  color: #b92c0a;
+  color: #bd1025;
 }
 .heroes .heroes__info {
   display: flex;
@@ -7290,89 +7290,104 @@ h6 {
   margin-bottom: 8rem;
 }
 
+.testimonials__title {
+  font-family: "SaolDisplay";
+  font-size: 15rem;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+.testimonials__title::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 80%;
+  height: 1px;
+  background-color: red;
+}
+.testimonials__title.testimonials__title--left {
+  line-height: 0.7em;
+  margin: 15rem 0 0 0;
+  padding: 0 0 0 2rem;
+  color: #272727;
+}
+.testimonials__title.testimonials__title--left::before {
+  background-color: #272727;
+  left: 98%;
+}
+.testimonials__title.testimonials__title--right {
+  text-align: right;
+  padding: 0 0 0 0;
+  color: #011109;
+}
+.testimonials__title.testimonials__title--right::before {
+  background-color: #011109;
+  right: 98%;
+}
+
 .testimonials {
   width: 100%;
-  background: #1f271b;
-  padding: 5rem 0;
+  background: #272727;
   overflow: hidden;
   position: relative;
 }
-.testimonials .testomonials__link {
-  width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%, -50%);
-  font-size: 1.8rem;
+.testimonials .testimonial {
+  margin: 5rem 0 10rem 0;
 }
-.testimonials .testomonials__link .testimonials__title {
-  color: #d5f2e3;
-  position: relative;
-}
-.testimonials .testomonials__link .testimonials__title::before {
-  content: "";
-  position: absolute;
-  width: 200px;
-  height: 1px;
-  background: #b92c0a;
-  top: 50%;
-  right: -75%;
-}
-.testimonials .testomonials__link .testimonials__title:first-of-type::before {
-  left: -90%;
-}
-.testimonials .testomonials__link .testimonials__title:nth-last-of-type() {
-  background: red;
+.testimonials .testimonials__title {
+  font-family: "SaolDisplay";
+  font-size: 15rem;
 }
 .testimonials .testimonial {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: #d4f1e2;
+}
+.testimonials .testimonial__image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 }
 .testimonials .testimonial__img {
   width: 100%;
-  max-width: 300px;
-  border: solid 1px #b92c0a;
+  max-width: 250px;
+  border: solid 1px #bd1025;
   border-radius: 50%;
   padding: 1rem;
-  margin: 0 0 2rem 0;
+  display: block;
+  margin: 0 auto 2rem auto;
 }
 .testimonials .testimonial__title {
   font-size: 2.8rem;
-  color: #008081;
   margin: 0 0 1rem 0;
 }
 .testimonials .testimonial__job {
   font-size: 1.6rem;
   font-weight: 700;
-  color: #008081;
   margin: 0 0 2.5rem 0;
 }
 .testimonials .testimonial__desc {
-  width: 70%;
-  color: #d5f2e3;
+  width: 90%;
   font-size: 1.8rem;
   text-align: center;
   font-weight: 100;
   margin: 0 0 3rem 0;
 }
-.testimonials .testimonial__arrows {
-  margin-top: 50px;
-}
 .testimonials .testimonial__arrow {
-  width: 100%;
-  max-width: 30px;
-  max-height: 60px;
+  position: absolute;
+  max-width: 20px;
   cursor: pointer;
-  display: inline-block;
+  top: 50%;
+  left: calc(50% + -180px);
+  transform: translate(-50%, -50%);
 }
-.testimonials .testimonial__arrow:last-of-type {
-  margin-top: -20px;
-  margin-left: 20px;
+.testimonials .testimonial__arrow.testimonial__arrow--left {
+  left: calc(50% + -200px);
+}
+.testimonials .testimonial__arrow.testimonial__arrow--right {
+  left: calc(50% + 200px);
 }
 
 .circle-list {
