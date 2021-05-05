@@ -4,16 +4,17 @@
   margin: 0;
   display: inline-block;
   position: relative;
+  // overflow: hidden;
   &::before {
     content: "";
     position: absolute;
     top: 50%;
-    width: 80%;
+    width: 90%;
     height: 1px;
     background-color: red;
   }
   &.testimonials__title--left {
-    line-height: 0.7em;
+    line-height: 0.9em;
     margin: 15rem 0 0 0;
     padding: 0 0 0 2rem;
     color: $grey;
@@ -36,9 +37,9 @@
 .testimonials {
   width: 100%;
   background: $grey;
-
   overflow: hidden;
   position: relative;
+  margin: 0;
 
   & .testimonial {
     margin: 5rem 0 10rem 0;
