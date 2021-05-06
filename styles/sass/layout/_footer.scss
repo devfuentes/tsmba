@@ -1,0 +1,38 @@
+.footer {
+  background: $black;
+  padding: 8rem;
+  width: 100%;
+  color: $white-green;
+  font-size: 1.5rem;
+
+  & .footer__social {
+    margin-bottom: 5rem;
+  }
+
+  & .footer__icon {
+    margin-left: 1rem;
+    img {
+      max-width: 35px;
+    }
+  }
+
+  & .footer__title {
+    font-family: $primary-font;
+  }
+
+  & .footer__list {
+    width: 100%;
+    padding: 0;
+    margin: 3rem 0 0 0;
+    list-style: none;
+    li {
+      margin-bottom: 1rem;
+    }
+    a {
+      color: $white-green;
+    }
+    a.green-color {
+      color: $green;
+    }
+  }
+}

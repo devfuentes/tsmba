@@ -7018,6 +7018,41 @@ h6 {
   font-family: "SaolDisplay";
 }
 
+.footer {
+  background: #011109;
+  padding: 8rem;
+  width: 100%;
+  color: #d4f1e2;
+  font-size: 1.5rem;
+}
+.footer .footer__social {
+  margin-bottom: 5rem;
+}
+.footer .footer__icon {
+  margin-left: 1rem;
+}
+.footer .footer__icon img {
+  max-width: 35px;
+}
+.footer .footer__title {
+  font-family: "Raleway", sans-serif;
+}
+.footer .footer__list {
+  width: 100%;
+  padding: 0;
+  margin: 3rem 0 0 0;
+  list-style: none;
+}
+.footer .footer__list li {
+  margin-bottom: 1rem;
+}
+.footer .footer__list a {
+  color: #d4f1e2;
+}
+.footer .footer__list a.green-color {
+  color: #008081;
+}
+
 .nav-container {
   background: #011109;
   padding: 3.5rem 0;
@@ -7474,4 +7509,8 @@ h6 {
 
 .circle-list {
   list-style-type: circle;
+}
+
+.green-color {
+  color: #008081;
 }
