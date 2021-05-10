@@ -5,3 +5,10 @@
 .green-color {
   color: $green;
 }
+
+.white-green-color {
+  color: $white-green;
+  &::after {
+    background-color: $white-green;
+  }
+}

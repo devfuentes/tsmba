@@ -5,6 +5,33 @@
   position: relative;
   overflow: hidden;
 
+  &.header--conocenos {
+    & .header__quote {
+      span {
+        font-family: inherit;
+        font-style: inherit;
+        color: $green;
+      }
+    }
+
+    & .header__desc {
+      max-width: 35%;
+      margin: 0 auto;
+      font-weight: $semibold-font;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -50px;
+        width: 70%;
+        left: 50%;
+        height: 1px;
+        transform: translate(-50%, -50%);
+        background-color: $red;
+      }
+    }
+  }
+
   & .header__title {
     color: $white-green;
     text-align: center;
