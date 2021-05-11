@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The social circle | Conocenos</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/css/main.css">
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="ed-container">
+        <div class="navigation">
+          <div class="navigation__logo">
+            <img src="img/logo.svg" alt="Logotipo the social circle">
+          </div>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Conocénos</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Programas</a>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link active">Selected professional heroes</a>
+                </li>
+                <li class="nav__item"><a href="" class="nav__link">Blog</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+    </div>
+    
+    </div>
+    <header class="header header--heroes">
+      <img src="img/facilitadores.png" alt="" class="header__teacher">
+      <div class="header__title">
+        <h1 class="header__quote">Selected <br> <span>Professional</span>  <br> Heroes  </h1>
+          <p class="header__desc">Conocé a tus profesores:</p>
+          <div class="header__categories">
+            <p class="title-italic">
+              Selecciona una categoría
+            </p>
+        </div>
+      </div>
+      
+    </header>
+
+
+    
+
+    <section class="faqs">
+      <h2 class="title-section">
+        <span class="white-green-color">RESUELVE</span>
+        <span>TUS DUDAS</span>
+      </h2>
+      <div class="ed-container">
+        <div class="ed-item s-100">
+          <div class="faq">
+            <p class="faq__title">¿Qué es the social circle?</p>
+            <p class="faq__panel">
+              Accordions are useful when you want to toggle between hiding and showing large amount of content:
+            </p>
+          </div>
+          <div class="faq">
+            <p class="faq__title">¿Quiénes están detrás?</p>
+            <p class="faq__panel">
+              Accordions are useful when you want to toggle between hiding and showing large amount of content:
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+
+
+    <footer class="footer">
+      <div class="ed-container footer__social">
+        <div class="ed-item s-100 s-main-end">
+          <a class="footer__icon" href=""><img src="img/icons/whats.png" alt="Logo whatsapp"></a>
+          <a class="footer__icon" href=""><img src="img/icons/linkedin.png" alt="Logo linkedin"></a>
+          <a class="footer__icon" href=""><img src="img/icons/facebook.png" alt="Logo facebook"></a>
+          <a class="footer__icon" href=""><img src="img/icons/instagram.png" alt="Logo instagram"></a>
+          <a class="footer__icon" href=""><img src="img/icons/vimeo.png" alt="Logo vimeo"></a>
+        </div>
+      </div>
+      <div class="ed-container m-main-end">
+        <div class="ed-item s-100 m-35">
+          <p>logo</p>
+        </div>
+        <div class="ed-item s-100 m-15 ">
+          <h4 class="footer__title">Contenido</h4>
+          <ul class="footer__list">
+            <li><a href="">Para qué</a></li>
+            <li><a href="">Por qué</a></li>
+            <li><a href="">Expertos</a></li>
+            <li><a href="">Metodología</a></li>
+            <li><a href="">Plan de estudios</a></li>
+            <li><a href="">Networking</a></li>
+            <li><a href="">Dudas</a></li>
+          </ul>
+        </div>
+        <div class="ed-item s-100 m-15 ">
+          <h4 class="footer__title ">Legal</h4>
+          <ul class="footer__list">
+            <li><a href="">Términos y condiciones</a></li>
+            <li><a href="">Política de privacidad</a></li>
+            <li><a href="">Aviso legal</a></li>
+            <li><a href="">Uso de cookies</a></li>
+            
+          </ul>
+        </div>
+        <div class="ed-item s-100 m-5">
+        </div>
+
+        <div class="ed-item s-100 m-15 ">
+          <h4 class="footer__title green-color">España</h4>
+          <ul class="footer__list">
+            <li><a class="green-color" href="">Free house.</a></li>
+            <li><a class="green-color" href="">Pola de Somiedo.</a></li>
+            <li><a class="green-color" href="">Asturias.</a></li>
+            
+          </ul>
+        </div>
+        <div class="ed-item s-100 m-15">
+          <h4 class="footer__title green-color">Colombia</h4>
+            <ul class="footer__list">
+              <li><a class="green-color" href="">Sector el Bote.</a></li>
+              <li><a class="green-color" href="">Tabio.</a></li>
+              <li><a class="green-color" href="">Cundinamarca.</a></li>
+            </ul>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item s-100 m-main-end">
+          <p class="green-color">© 2021 The Social MBA</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var faq = document.getElementsByClassName("faq__title");
+      var i;
+
+      for (i = 0; i < faq.length; i++) {
+        faq[i].addEventListener("click", function() {
+          /* Toggle between adding and removing the "active" class,
+          to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          /* Toggle between hiding and showing the active panel */
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    });
+  </script>
+</html>

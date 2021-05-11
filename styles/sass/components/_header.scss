@@ -1,11 +1,31 @@
 .header {
   width: 100%;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   background: $black;
   position: relative;
   overflow: hidden;
 
-  &.header--conocenos {
+  &.header--heroes {
+    position: relative;
+    z-index: 2;
+
+    & .header__teacher {
+      position: absolute;
+      top: 0;
+      mix-blend-mode: multiply;
+
+      right: 0;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  & .header__categories {
+    margin: 15rem 0 0 0;
+  }
+
+  &.header--conocenos,
+  &.header--heroes {
     & .header__quote {
       span {
         font-family: inherit;

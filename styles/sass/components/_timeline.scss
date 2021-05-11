@@ -24,28 +24,6 @@
     right: -8%;
   }
 
-  & .timelime__header {
-    color: $white-green;
-    font-family: $secondary-font;
-    font-style: italic;
-    text-align: center;
-    font-size: 3.2rem;
-    padding: 2rem;
-    position: relative;
-    display: inline-block;
-    margin: 0 0 15rem 0;
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: -15px;
-      transform: translate(-50%, -50%);
-      width: 30px;
-      height: 1px;
-      background-color: $red;
-    }
-  }
-
   & .timeline__container {
     border-left: solid 1px $red;
     border-right: solid 1px $red;

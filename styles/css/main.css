@@ -7096,23 +7096,38 @@ h6 {
 
 .header {
   width: 100%;
-  height: calc(100vh - 120px);
+  min-height: calc(100vh - 120px);
   background: #011109;
   position: relative;
   overflow: hidden;
 }
-.header.header--conocenos .header__quote span {
+.header.header--heroes {
+  position: relative;
+  z-index: 2;
+}
+.header.header--heroes .header__teacher {
+  position: absolute;
+  top: 0;
+  mix-blend-mode: multiply;
+  right: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+.header .header__categories {
+  margin: 15rem 0 0 0;
+}
+.header.header--conocenos .header__quote span, .header.header--heroes .header__quote span {
   font-family: inherit;
   font-style: inherit;
   color: #008081;
 }
-.header.header--conocenos .header__desc {
+.header.header--conocenos .header__desc, .header.header--heroes .header__desc {
   max-width: 35%;
   margin: 0 auto;
   font-weight: 500;
   position: relative;
 }
-.header.header--conocenos .header__desc::after {
+.header.header--conocenos .header__desc::after, .header.header--heroes .header__desc::after {
   content: "";
   position: absolute;
   bottom: -50px;
@@ -7550,27 +7565,6 @@ h6 {
   top: 98%;
   right: -8%;
 }
-.timeline .timelime__header {
-  color: #d4f1e2;
-  font-family: "SaolDisplay";
-  font-style: italic;
-  text-align: center;
-  font-size: 3.2rem;
-  padding: 2rem;
-  position: relative;
-  display: inline-block;
-  margin: 0 0 15rem 0;
-}
-.timeline .timelime__header::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: -15px;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 1px;
-  background-color: #bd1025;
-}
 .timeline .timeline__container {
   border-left: solid 1px #bd1025;
   border-right: solid 1px #bd1025;
@@ -7746,6 +7740,28 @@ h6 {
 .title-section span:nth-last-of-type(2n + 1)::after {
   background-color: #011109;
   left: -30%;
+}
+
+.title-italic {
+  color: #d4f1e2;
+  font-family: "SaolDisplay";
+  font-style: italic;
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 2rem;
+  position: relative;
+  display: inline-block;
+  margin: 0 0 15rem 0;
+}
+.title-italic::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 1px;
+  background-color: #bd1025;
 }
 
 .header-world {
