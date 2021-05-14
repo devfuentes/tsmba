@@ -6,9 +6,39 @@
   color: $green;
 }
 
+.line-green-color {
+  color: $green;
+  &::after,
+  &::before {
+    background-color: $green !important;
+  }
+}
+
 .white-green-color {
   color: $white-green;
+  &::after,
+  &::before {
+    background-color: $white-green !important;
+  }
+}
+
+.lines {
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 1px;
+    background: $black;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    left: -30px;
+  }
   &::after {
-    background-color: $white-green;
+    left: calc(100% + 30px);
   }
 }

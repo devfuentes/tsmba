@@ -1,0 +1,25 @@
+.quote {
+  width: 100%;
+  height: calc(100% - 2rem);
+  border: solid 1px $black;
+  margin: 0 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+
+  & .quote__desc {
+    font-size: 5rem;
+    text-align: center;
+    font-family: $secondary-font;
+    margin: 0 0 3rem 0;
+  }
+
+  & .quote__author {
+    font-size: 1.8rem;
+    font-weight: $bold-font;
+    letter-spacing: 0.3em;
+    position: relative;
+  }
+}

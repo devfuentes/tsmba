@@ -7764,6 +7764,107 @@ h6 {
   background-color: #bd1025;
 }
 
+.teachers {
+  margin: 0;
+  width: 100%;
+  background-color: #d4f1e2;
+  z-index: 3;
+  padding: 0 0 15rem 0;
+}
+.teachers .teacher__row {
+  margin-top: -5rem;
+}
+.teachers .teacher {
+  width: 100%;
+  background: #fff;
+  padding: 2rem;
+  margin: 0 0 2rem 0;
+}
+.teachers .teacher__img img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.teachers .teacher__name {
+  color: #011109;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.teachers .teacher__desc {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.teachers .teacher__link {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 700;
+  color: #011109;
+  text-decoration: underline;
+  width: 100%;
+  display: block;
+}
+.teachers .teacher__title {
+  position: relative;
+}
+.teachers .teacher__title::after, .teachers .teacher__title::before {
+  content: "";
+  position: absolute;
+  width: 1rem;
+  height: 1px;
+  background: #011109;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.teachers .teacher__title::after {
+  right: 0;
+}
+.teachers .teacher__title::before {
+  left: 4px;
+}
+
+.quote {
+  width: 100%;
+  height: calc(100% - 2rem);
+  border: solid 1px #011109;
+  margin: 0 0 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem;
+}
+.quote .quote__desc {
+  font-size: 5rem;
+  text-align: center;
+  font-family: "SaolDisplay";
+  margin: 0 0 3rem 0;
+}
+.quote .quote__author {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  position: relative;
+}
+
+.partners {
+  width: 100%;
+  background: #008081;
+  padding: 0 0 10rem 0;
+  margin: 0;
+  z-index: 5;
+}
+.partners .partner__logo {
+  margin: 0 0 3rem 0;
+}
+.partners .title-section {
+  margin-bottom: 15rem;
+}
+.partners .partners__title::after, .partners .partners__title::before {
+  top: 56%;
+}
+
 .header-world {
   width: 100%;
   background-color: #011109;
@@ -7778,9 +7879,35 @@ h6 {
   color: #008081;
 }
 
+.line-green-color {
+  color: #008081;
+}
+.line-green-color::after, .line-green-color::before {
+  background-color: #008081 !important;
+}
+
 .white-green-color {
   color: #d4f1e2;
 }
-.white-green-color::after {
-  background-color: #d4f1e2;
+.white-green-color::after, .white-green-color::before {
+  background-color: #d4f1e2 !important;
+}
+
+.lines {
+  position: relative;
+}
+.lines::after, .lines::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 1px;
+  background: #011109;
+  transform: translate(-50%, -50%);
+}
+.lines::before {
+  left: -30px;
+}
+.lines::after {
+  left: calc(100% + 30px);
 }
