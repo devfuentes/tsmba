@@ -5,6 +5,10 @@
   color: $white-green;
   font-size: 1.5rem;
 
+  & .footer__logo {
+    max-width: 200px;
+  }
+
   & .footer__social {
     margin-bottom: 5rem;
   }
