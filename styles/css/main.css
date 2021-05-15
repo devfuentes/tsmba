@@ -7057,7 +7057,7 @@ h6 {
   background: #011109;
   padding: 3.5rem 0;
   height: 120px;
-  display: fixed;
+  width: 100%;
 }
 .nav-container .navigation {
   width: 100%;
@@ -7096,10 +7096,42 @@ h6 {
 
 .header {
   width: 100%;
-  min-height: calc(100vh - 120px);
+  min-height: 100vh;
   background: #011109;
-  position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header.header--programas {
+  background: #011109;
+  background: linear-gradient(180deg, #011109 20%, black 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011109",endColorstr="#000000",GradientType=1);
+}
+.header .header__object {
+  align-self: flex-start;
+  max-width: 70%;
+  margin: 0;
+  position: relative;
+}
+.header .header__subtitle {
+  color: #d4f1e2;
+  font-family: "SaolDisplay";
+  font-size: 3.2rem;
+  font-style: italic;
+  position: absolute;
+  top: 70%;
+  left: 45%;
+}
+.header .header__subtitle::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 1px;
+  background-color: #bd1025;
+  top: 50%;
+  left: -80px;
 }
 .header.header--heroes {
   position: relative;
@@ -7116,21 +7148,22 @@ h6 {
 .header .header__categories {
   margin: 15rem 0 0 0;
 }
-.header.header--conocenos .header__quote span, .header.header--heroes .header__quote span {
+.header.header--conocenos .header__quote span, .header.header--heroes .header__quote span, .header.header--programas .header__quote span {
   font-family: inherit;
   font-style: inherit;
   color: #008081;
 }
-.header.header--conocenos .header__desc, .header.header--heroes .header__desc {
+.header.header--conocenos .header__desc, .header.header--heroes .header__desc, .header.header--programas .header__desc {
   max-width: 35%;
   margin: 0 auto;
   font-weight: 500;
   position: relative;
+  padding: 0 0 5rem 0;
 }
-.header.header--conocenos .header__desc::after, .header.header--heroes .header__desc::after {
+.header.header--conocenos .header__desc::after, .header.header--heroes .header__desc::after, .header.header--programas .header__desc::after {
   content: "";
   position: absolute;
-  bottom: -50px;
+  bottom: 0;
   width: 70%;
   left: 50%;
   height: 1px;
@@ -7141,11 +7174,7 @@ h6 {
   color: #d4f1e2;
   text-align: center;
   width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+  padding: 10rem 0 0 0;
 }
 .header .header__img {
   position: absolute;
@@ -7159,7 +7188,7 @@ h6 {
   font-size: 9.6rem;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  margin: 0 0 3rem 0;
+  margin: 0 0 4rem 0;
   line-height: 1em;
 }
 .header .header__quote span {
@@ -7741,6 +7770,44 @@ h6 {
   background-color: #011109;
   left: -30%;
 }
+.title-section.title-section--programas {
+  max-width: 95%;
+  color: #bd1025;
+  margin: -13rem 0 15rem 0;
+}
+.title-section.title-section--programas span:nth-last-of-type(2n + 1) {
+  align-self: flex-start;
+  padding-left: 5rem;
+  color: #011109;
+}
+.title-section.title-section--programas span:nth-last-of-type(2n + 1)::after {
+  left: 0;
+  top: 55.8%;
+  width: 20%;
+}
+.title-section.title-section--programas span:nth-last-of-type(2n) {
+  align-self: flex-end;
+  padding-right: 15rem;
+  color: #011109;
+}
+.title-section.title-section--programas span:nth-last-of-type(2n)::after {
+  display: none;
+}
+.title-section.title-section--programas span:nth-of-type(1) {
+  color: #bd1025;
+}
+.title-section.title-section--programas span:nth-of-type(1)::after {
+  display: none;
+}
+.title-section.title-section--programas span:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  left: 95%;
+  width: 100%;
+  height: 1px;
+  background: #bd1025;
+  top: 50%;
+}
 
 .title-italic {
   color: #d4f1e2;
@@ -7863,6 +7930,67 @@ h6 {
 }
 .partners .partners__title::after, .partners .partners__title::before {
   top: 56%;
+}
+
+.programas {
+  width: 100%;
+  margin: 0;
+  background: #bd1025;
+  background: linear-gradient(180deg, #bd1025 13%, #272727 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bd1025",endColorstr="#272727",GradientType=1);
+}
+.programas .programa-header {
+  width: 100%;
+  font-size: 2.7rem;
+  margin-bottom: 15rem;
+}
+.programas .programa-header__title {
+  font-size: 10.9rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 100;
+  padding: 0 0 0 0;
+  border-bottom: solid 1px #011109;
+  transform: rotate(270deg);
+}
+.programas .programa-header__desc {
+  line-height: 1.3em;
+}
+
+.plan {
+  color: #d4f1e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plan .plan__title {
+  width: 55%;
+  font-size: 8rem;
+  font-weight: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10rem 0 0;
+}
+.plan .plan__img {
+  display: flex;
+  width: 45%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.plan .plan__img img {
+  max-width: 100%;
+}
+.plan .plan__subtitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 0.7em;
+}
+.plan .plan__subtitle span {
+  width: 100%;
+  text-align: right;
 }
 
 .header-world {
