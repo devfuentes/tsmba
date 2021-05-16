@@ -37,3 +37,41 @@
     }
   }
 }
+
+.plan-card {
+  color: $white-green;
+  font-size: 1.8rem;
+  margin: 5rem 0 5rem 0;
+
+  &:last-of-type {
+    border-top: dashed 1px $white-green;
+    & .plan-card__title {
+      padding-top: 3.5rem;
+    }
+  }
+
+  & .plan-card__header {
+    padding: 0 0 1.5rem 0;
+    margin: 0 0 3.5rem 0;
+    font-weight: $light-font;
+    border-bottom: solid 1px $white-green;
+  }
+
+  & .plan-card__title {
+    text-align: center;
+    color: $red;
+    font-size: 6rem;
+    max-width: 60%;
+    margin: 0 auto 2rem auto;
+    &.plan-card__title--white {
+      color: $white-green;
+    }
+  }
+
+  & .plan-card__desc {
+    text-align: center;
+    max-width: 65%;
+    margin: 0 auto;
+    line-height: 1.5em;
+  }
+}
