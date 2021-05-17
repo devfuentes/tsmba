@@ -6986,16 +6986,40 @@ h6 {
 
 .footer {
   background: #011109;
-  padding: 8rem;
+  padding: 5rem 0;
   width: 100%;
   color: #d4f1e2;
   font-size: 1.5rem;
 }
+@media only screen and (min-width: 1024px) {
+  .footer {
+    padding: 8rem;
+  }
+}
+.footer .footer__copy {
+  margin-top: 5rem;
+}
 .footer .footer__logo {
   max-width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 1024px) {
+  .footer .footer__logo {
+    max-width: 300px;
+    display: initial;
+  }
 }
 .footer .footer__social {
   margin-bottom: 5rem;
+}
+.footer .footer__social__container {
+  margin-top: 2rem;
+}
+@media only screen and (min-width: 1024px) {
+  .footer .footer__social__container {
+    margin-top: 0;
+  }
 }
 .footer .footer__icon {
   margin-left: 1rem;
@@ -7009,8 +7033,15 @@ h6 {
 .footer .footer__list {
   width: 100%;
   padding: 0;
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
   list-style: none;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .footer .footer__list {
+    margin: 3rem 0 0 0;
+    text-align: left;
+  }
 }
 .footer .footer__list li {
   margin-bottom: 1rem;
@@ -7024,24 +7055,65 @@ h6 {
 
 .nav-container {
   background: #011109;
-  padding: 3.5rem 0;
+  padding: 3.5rem 3rem;
   height: 120px;
   width: 100%;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container {
+    padding: 3.5rem 0;
+  }
 }
 .nav-container .navigation {
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation {
+    justify-content: initial;
+  }
 }
 .nav-container .navigation .navigation__logo {
-  width: 10%;
+  width: 50%;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation .navigation__logo {
+    width: 10%;
+  }
 }
 .nav-container .navigation .navigation__logo img {
   width: 100px;
 }
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation .navigation__logo img {
+    width: 100px;
+  }
+}
+.nav-container .navigation .navigation__icon {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation .navigation__icon {
+    display: none;
+    flex-wrap: nowrap;
+  }
+}
+.nav-container .navigation .navigation__icon img {
+  max-width: 50px;
+}
 .nav-container .navigation .nav {
   width: 100%;
   justify-self: center;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation .nav {
+    display: initial;
+  }
 }
 .nav-container .navigation .nav .nav__list {
   width: 60%;
@@ -7065,13 +7137,18 @@ h6 {
 
 .header {
   width: 100%;
-  min-height: 100vh;
+  min-height: 70vh;
   background: #011109;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+@media only screen and (min-width: 1024px) {
+  .header {
+    min-height: 100vh;
+  }
 }
 .header.header--programas {
   background: #011109;
@@ -7142,25 +7219,32 @@ h6 {
   background-color: #bd1025;
 }
 .header .header__title {
+  position: relative;
   color: #d4f1e2;
   text-align: center;
   width: 100%;
   padding: 10rem 0 0 0;
+  z-index: 1;
 }
 .header .header__img {
   position: absolute;
-  top: 45%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 550px;
-  z-index: 1;
+  z-index: -1;
 }
 .header .header__quote {
-  font-size: 9.6rem;
+  font-size: 4.6rem;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   margin: 0 0 4rem 0;
   line-height: 1em;
+}
+@media only screen and (min-width: 1024px) {
+  .header .header__quote {
+    font-size: 9.6rem;
+  }
 }
 .header .header__quote span {
   font-family: "SaolDisplay";
@@ -7170,8 +7254,14 @@ h6 {
 .header .header__desc {
   font-family: "Raleway", sans-serif;
   font-weight: 100;
-  font-size: 2.4rem;
-  margin-bottom: 10rem;
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .header .header__desc {
+    font-size: 2.4rem;
+    margin-bottom: 10rem;
+  }
 }
 
 .btn {
@@ -7223,8 +7313,13 @@ h6 {
   filter: drop-shadow(10px 15px 30px rgba(0, 0, 0, 0.8));
 }
 .features .feature__title {
-  font-size: 6rem;
+  font-size: 5rem;
   margin: 0 0 2rem 0;
+}
+@media only screen and (min-width: 1024px) {
+  .features .feature__title {
+    font-size: 6rem;
+  }
 }
 .features .feature__desc,
 .features .feature__list {
@@ -7255,6 +7350,12 @@ h6 {
   top: 0;
   left: 0;
   z-index: 1;
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .banner .banner__img {
+    display: initial;
+  }
 }
 .banner .banner__content {
   position: relative;
@@ -7304,9 +7405,14 @@ h6 {
 .heroes {
   width: 100%;
   background-color: #011109;
-  padding: 8rem 0 0 0;
+  padding: 8rem 0 15rem 0;
   margin: 0;
   overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  .heroes {
+    padding: 8rem 0 35rem 0;
+  }
 }
 .heroes .heroes__img {
   width: 100%;
@@ -7317,11 +7423,16 @@ h6 {
 .heroes .heroes__title {
   font-weight: 100;
   color: #d4f1e2;
-  font-size: 13rem;
+  font-size: 6rem;
   text-align: center;
   position: relative;
   padding: 2rem 0;
   margin-bottom: 5rem;
+}
+@media only screen and (min-width: 1024px) {
+  .heroes .heroes__title {
+    font-size: 13rem;
+  }
 }
 .heroes .heroes__title::after, .heroes .heroes__title::before {
   content: "";
@@ -7343,13 +7454,37 @@ h6 {
 }
 .heroes .heroes__info__title {
   color: #008081;
-  margin-right: 20px;
+  margin-right: 0;
+}
+@media only screen and (min-width: 1024px) {
+  .heroes .heroes__info__title {
+    margin-right: 20px;
+  }
 }
 .heroes .heroes__info__desc {
   font-size: 1.8rem;
   font-weight: 400;
   text-align: left;
   width: 40%;
+  display: none;
+}
+@media only screen and (min-width: 1024px) {
+  .heroes .heroes__info__desc {
+    display: initial;
+  }
+}
+.heroes .heroes__info__desc.heroes__info__desc--mobile {
+  display: initial;
+  text-align: center;
+  width: 100%;
+  display: block;
+  color: #fff;
+  margin: 0 0 5rem 0;
+}
+@media only screen and (min-width: 1024px) {
+  .heroes .heroes__info__desc.heroes__info__desc--mobile {
+    display: none;
+  }
 }
 .heroes .heroes__info__desc span {
   color: #bd1025;
@@ -7363,45 +7498,9 @@ h6 {
   margin-bottom: 8rem;
 }
 
-.testimonials__title {
-  font-family: "SaolDisplay";
-  font-size: 15rem;
-  margin: 0;
-  display: inline-block;
-  position: relative;
-}
-.testimonials__title::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  width: 90%;
-  height: 1px;
-  background-color: red;
-}
-.testimonials__title.testimonials__title--left {
-  line-height: 0.9em;
-  margin: 15rem 0 0 0;
-  padding: 0 0 0 2rem;
-  color: #272727;
-}
-.testimonials__title.testimonials__title--left::before {
-  background-color: #272727;
-  left: 98%;
-}
-.testimonials__title.testimonials__title--right {
-  text-align: right;
-  padding: 0 0 0 0;
-  color: #011109;
-}
-.testimonials__title.testimonials__title--right::before {
-  background-color: #011109;
-  right: 98%;
-}
-
 .testimonials {
   width: 100%;
   background: #272727;
-  overflow: hidden;
   position: relative;
   margin: 0;
 }
@@ -7470,6 +7569,7 @@ h6 {
   margin: 0;
   padding: 8rem 0;
   overflow: hidden;
+  display: none;
 }
 .blog .blog__link--more {
   color: #bd1025;
@@ -7716,11 +7816,18 @@ h6 {
   justify-content: center;
   align-items: flex-start;
   padding: 0 2rem;
-  font-size: 15rem;
+  font-size: 5rem;
   line-height: 0.9em;
-  margin: -13rem 0 25rem 0;
+  margin: -4rem 0 25rem 0;
   z-index: 1;
   overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  .title-section {
+    font-size: 15rem;
+    line-height: 0.9em;
+    margin: -13rem 0 25rem 0;
+  }
 }
 .title-section span {
   position: relative;
@@ -7794,6 +7901,30 @@ h6 {
   left: -140%;
   width: 300%;
   background: #d4f1e2;
+}
+.title-section.title-section--testomonios {
+  margin-bottom: 5rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.title-section.title-section--testomonios span {
+  color: #272727;
+}
+.title-section.title-section--testomonios span::after {
+  background: #272727;
+  left: 200%;
+  width: 200%;
+}
+.title-section.title-section--testomonios span:last-of-type {
+  align-self: flex-end;
+  color: #011109;
+  padding-right: 20%;
+}
+.title-section.title-section--testomonios span:last-of-type::after {
+  left: -149.5%;
+  width: 300%;
+  background: #011109;
 }
 
 .title-italic {

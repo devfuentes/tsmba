@@ -6,11 +6,16 @@
   justify-content: center;
   align-items: flex-start;
   padding: 0 2rem;
-  font-size: 15rem;
+  font-size: 5rem;
   line-height: 0.9em;
-  margin: -13rem 0 25rem 0;
+  margin: -4rem 0 25rem 0;
   z-index: 1;
   overflow: hidden;
+  @include response-min($l) {
+    font-size: 15rem;
+    line-height: 0.9em;
+    margin: -13rem 0 25rem 0;
+  }
   span {
     position: relative;
     &::after {
@@ -86,6 +91,31 @@
           left: -140%;
           width: 300%;
           background: $white-green;
+        }
+      }
+    }
+  }
+
+  &.title-section--testomonios {
+    margin-bottom: 5rem;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    span {
+      color: $grey;
+      &::after {
+        background: $grey;
+        left: 200%;
+        width: 200%;
+      }
+      &:last-of-type {
+        align-self: flex-end;
+        color: $black;
+        padding-right: 20%;
+        &::after {
+          left: -149.5%;
+          width: 300%;
+          background: $black;
         }
       }
     }

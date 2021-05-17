@@ -1,16 +1,38 @@
 .footer {
   background: $black;
-  padding: 8rem;
+  padding: 5rem 0;
   width: 100%;
   color: $white-green;
   font-size: 1.5rem;
 
+  @include response-min($l) {
+    padding: 8rem;
+  }
+
+  & .footer__copy {
+    margin-top: 5rem;
+  }
+
   & .footer__logo {
     max-width: 200px;
+    display: block;
+    margin: 0 auto;
+
+    @include response-min($l) {
+      max-width: 300px;
+      display: initial;
+    }
   }
 
   & .footer__social {
     margin-bottom: 5rem;
+  }
+
+  .footer__social__container {
+    margin-top: 2rem;
+    @include response-min($l) {
+      margin-top: 0;
+    }
   }
 
   & .footer__icon {
@@ -27,8 +49,13 @@
   & .footer__list {
     width: 100%;
     padding: 0;
-    margin: 3rem 0 0 0;
+    margin: 2rem 0 0 0;
     list-style: none;
+    text-align: center;
+    @include response-min($l) {
+      margin: 3rem 0 0 0;
+      text-align: left;
+    }
     li {
       margin-bottom: 1rem;
     }

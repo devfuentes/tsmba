@@ -1,43 +1,6 @@
-.testimonials__title {
-  font-family: $secondary-font;
-  font-size: 15rem;
-  margin: 0;
-  display: inline-block;
-  position: relative;
-  // overflow: hidden;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 90%;
-    height: 1px;
-    background-color: red;
-  }
-  &.testimonials__title--left {
-    line-height: 0.9em;
-    margin: 15rem 0 0 0;
-    padding: 0 0 0 2rem;
-    color: $grey;
-    &::before {
-      background-color: $grey;
-      left: 98%;
-    }
-  }
-  &.testimonials__title--right {
-    text-align: right;
-    padding: 0 0 0 0;
-    color: $black;
-    &::before {
-      background-color: $black;
-      right: 98%;
-    }
-  }
-}
-
 .testimonials {
   width: 100%;
   background: $grey;
-  overflow: hidden;
   position: relative;
   margin: 0;
 
