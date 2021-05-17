@@ -6991,12 +6991,9 @@ h6 {
   color: #d4f1e2;
   font-size: 1.5rem;
 }
-<<<<<<< HEAD
 .footer .footer__logo {
   max-width: 200px;
 }
-=======
->>>>>>> fix-header
 .footer .footer__social {
   margin-bottom: 5rem;
 }
@@ -7029,11 +7026,7 @@ h6 {
   background: #011109;
   padding: 3.5rem 0;
   height: 120px;
-<<<<<<< HEAD
-  display: fixed;
-=======
   width: 100%;
->>>>>>> fix-header
 }
 .nav-container .navigation {
   width: 100%;
@@ -7072,12 +7065,6 @@ h6 {
 
 .header {
   width: 100%;
-<<<<<<< HEAD
-  min-height: calc(100vh - 120px);
-  background: #011109;
-  position: relative;
-  overflow: hidden;
-=======
   min-height: 100vh;
   background: #011109;
   overflow: hidden;
@@ -7116,7 +7103,6 @@ h6 {
   background-color: #bd1025;
   top: 50%;
   left: -80px;
->>>>>>> fix-header
 }
 .header.header--heroes {
   position: relative;
@@ -7793,6 +7779,22 @@ h6 {
   background: #bd1025;
   top: 50%;
 }
+.title-section.title-section--powered {
+  margin-bottom: 15rem;
+}
+.title-section.title-section--powered span::after {
+  background: #011109;
+  left: 134%;
+}
+.title-section.title-section--powered span:last-of-type {
+  align-self: center;
+  color: #d4f1e2;
+}
+.title-section.title-section--powered span:last-of-type::after {
+  left: -140%;
+  width: 300%;
+  background: #d4f1e2;
+}
 
 .title-italic {
   color: #d4f1e2;
@@ -7919,11 +7921,12 @@ h6 {
 
 .programas {
   width: 100%;
+  padding: 0 0 30rem 0;
   margin: 0;
   background: #bd1025;
-  background: -moz-linear-gradient(180deg, #bd1025 13%, #272727 100%);
-  background: -webkit-linear-gradient(180deg, #bd1025 13%, #272727 100%);
-  background: linear-gradient(180deg, #bd1025 13%, #272727 100%);
+  background: -moz-linear-gradient(180deg, #bd1025 5%, #272727 35%);
+  background: -webkit-linear-gradient(180deg, #bd1025 5%, #272727 35%);
+  background: linear-gradient(180deg, #bd1025 5%, #272727 35%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bd1025",endColorstr="#272727",GradientType=1);
 }
 .programas .programa-header {
@@ -7982,16 +7985,97 @@ h6 {
 
 .plan-card {
   color: #d4f1e2;
-  background-color: red;
+  font-size: 1.8rem;
+  margin: 5rem 0 5rem 0;
+}
+.plan-card:last-of-type {
+  border-top: dashed 1px #d4f1e2;
+}
+.plan-card:last-of-type .plan-card__title {
+  padding-top: 3.5rem;
 }
 .plan-card .plan-card__header {
+  padding: 0 0 1.5rem 0;
+  margin: 0 0 3.5rem 0;
+  font-weight: 300;
   border-bottom: solid 1px #d4f1e2;
+}
+.plan-card .plan-card__title {
+  text-align: center;
+  color: #bd1025;
+  font-size: 6rem;
+  max-width: 60%;
+  margin: 0 auto 2rem auto;
+}
+.plan-card .plan-card__title.plan-card__title--white {
+  color: #d4f1e2;
+}
+.plan-card .plan-card__desc {
+  text-align: center;
+  max-width: 65%;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+.method {
+  width: 100%;
+  background: #d4f1e2;
+  margin: 0;
+  padding: 0 0 20rem 0;
+}
+.method .method__container:nth-of-type(2n) {
+  padding-top: 15rem;
+}
+.method .method__number {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: solid 1px #bd1025;
+  color: #bd1025;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15rem;
+  font-style: italic;
+  font-weight: 300;
+  position: relative;
+  overflow: hidden;
+}
+.method .method__number span {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+.method .method__title {
+  font-size: 3.2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  margin: 4rem 0;
+}
+.method .method__desc {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  padding: 0 4rem 0 0;
+}
+
+.powered {
+  width: 100%;
+  background: #272727;
+  margin: 0;
+  padding: 0 0 15rem 0;
 }
 
 .header-world {
   width: 100%;
   background-color: #011109;
   margin: 0;
+}
+
+.page-content {
+  width: 100%;
+  background: #011109;
 }
 
 .circle-list {

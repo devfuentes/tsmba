@@ -1,0 +1,15 @@
+.unete__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .btn:first-of-type {
+    margin-right: 5rem;
+  }
+}
+
+.unete__desc {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+}
