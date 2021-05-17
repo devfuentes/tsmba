@@ -1,0 +1,48 @@
+.method {
+  width: 100%;
+  background: $white-green;
+  margin: 0;
+  padding: 0 0 20rem 0;
+
+  & .method__container {
+    &:nth-of-type(2n) {
+      padding-top: 15rem;
+    }
+  }
+
+  & .method__number {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: solid 1px $red;
+    color: $red;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15rem;
+    font-style: italic;
+    font-weight: $light-font;
+    position: relative;
+    overflow: hidden;
+    span {
+      position: absolute;
+      top: 45%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  & .method__title {
+    font-size: 3.2rem;
+    font-family: $primary-font;
+    font-weight: $regular-font;
+    margin: 4rem 0;
+  }
+
+  & .method__desc {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+    padding: 0 4rem 0 0;
+  }
+}
