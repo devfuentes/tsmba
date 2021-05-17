@@ -71,6 +71,25 @@
       }
     }
   }
+
+  &.title-section--powered {
+    margin-bottom: 15rem;
+    span {
+      &::after {
+        background: $black;
+        left: 134%;
+      }
+      &:last-of-type {
+        align-self: center;
+        color: $white-green;
+        &::after {
+          left: -140%;
+          width: 300%;
+          background: $white-green;
+        }
+      }
+    }
+  }
 }
 
 .title-italic {
