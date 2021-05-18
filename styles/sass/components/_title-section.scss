@@ -36,9 +36,25 @@
     }
   }
   &.title-section--programas {
-    max-width: 95%;
+    max-width: 100%;
     color: $red;
-    margin: -13rem 0 15rem 0;
+    margin: -2rem 0 5rem 0;
+    font-size: 3rem;
+    @include response-min($m) {
+      margin: -5rem 0 15rem 0;
+      max-width: 95%;
+      font-size: 7rem;
+    }
+    @include response-min($l) {
+      margin: -7rem 0 15rem 0;
+      max-width: 95%;
+      font-size: 9rem;
+    }
+    @include response-min($xl) {
+      margin: -13rem 0 15rem 0;
+      max-width: 95%;
+      font-size: 15rem;
+    }
 
     span {
       &:nth-last-of-type(2n + 1) {
@@ -78,7 +94,10 @@
   }
 
   &.title-section--powered {
-    margin-bottom: 15rem;
+    margin-bottom: 8rem;
+    @include response-min($l) {
+      margin-bottom: 15rem;
+    }
     span {
       &::after {
         background: $black;
@@ -143,6 +162,13 @@
       ::after {
         left: 131%;
       }
+    }
+  }
+
+  &.title-section--method {
+    margin: -4rem 0 8rem 0;
+    @include response-min($l) {
+      margin: -4rem 0 25rem 0;
     }
   }
 }

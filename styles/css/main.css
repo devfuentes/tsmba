@@ -7162,6 +7162,14 @@ h6 {
   background: linear-gradient(180deg, #011109 20%, black 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011109",endColorstr="#000000",GradientType=1);
 }
+.header.header--programas .header__quote {
+  font-size: 4rem;
+}
+@media only screen and (min-width: 1024px) {
+  .header.header--programas .header__quote {
+    font-size: 9.6rem;
+  }
+}
 .header .header__object {
   align-self: flex-start;
   max-width: 70%;
@@ -7171,20 +7179,32 @@ h6 {
 .header .header__subtitle {
   color: #d4f1e2;
   font-family: "SaolDisplay";
-  font-size: 3.2rem;
+  font-size: 1rem;
   font-style: italic;
   position: absolute;
   top: 70%;
-  left: 45%;
+  left: 70%;
+}
+@media only screen and (min-width: 1024px) {
+  .header .header__subtitle {
+    font-size: 3.2rem;
+    left: 45%;
+  }
 }
 .header .header__subtitle::before {
   content: "";
   position: absolute;
-  width: 50px;
+  width: 40px;
   height: 1px;
   background-color: #bd1025;
   top: 50%;
-  left: -80px;
+  left: -50px;
+}
+@media only screen and (min-width: 1024px) {
+  .header .header__subtitle::before {
+    left: -80px;
+    width: 50px;
+  }
 }
 .header.header--heroes {
   position: relative;
@@ -7784,7 +7804,7 @@ h6 {
     position: absolute;
     top: 50%;
     left: 60%;
-    font-size: 5rem;
+    font-size: 3.5rem;
   }
 }
 .timeline .timeline__img {
@@ -7914,9 +7934,31 @@ h6 {
   left: -30%;
 }
 .title-section.title-section--programas {
-  max-width: 95%;
+  max-width: 100%;
   color: #bd1025;
-  margin: -13rem 0 15rem 0;
+  margin: -2rem 0 5rem 0;
+  font-size: 3rem;
+}
+@media only screen and (min-width: 640px) {
+  .title-section.title-section--programas {
+    margin: -5rem 0 15rem 0;
+    max-width: 95%;
+    font-size: 7rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .title-section.title-section--programas {
+    margin: -7rem 0 15rem 0;
+    max-width: 95%;
+    font-size: 9rem;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .title-section.title-section--programas {
+    margin: -13rem 0 15rem 0;
+    max-width: 95%;
+    font-size: 15rem;
+  }
 }
 .title-section.title-section--programas span:nth-last-of-type(2n + 1) {
   align-self: flex-start;
@@ -7952,7 +7994,12 @@ h6 {
   top: 50%;
 }
 .title-section.title-section--powered {
-  margin-bottom: 15rem;
+  margin-bottom: 8rem;
+}
+@media only screen and (min-width: 1024px) {
+  .title-section.title-section--powered {
+    margin-bottom: 15rem;
+  }
 }
 .title-section.title-section--powered span::after {
   background: #011109;
@@ -8019,6 +8066,14 @@ h6 {
 }
 .title-section.title-section--conocenos span ::after {
   left: 131%;
+}
+.title-section.title-section--method {
+  margin: -4rem 0 8rem 0;
+}
+@media only screen and (min-width: 1024px) {
+  .title-section.title-section--method {
+    margin: -4rem 0 25rem 0;
+  }
 }
 
 .title-italic {
@@ -8146,7 +8201,7 @@ h6 {
 
 .programas {
   width: 100%;
-  padding: 0 0 30rem 0;
+  padding: 0 0 15rem 0;
   margin: 0;
   background: #bd1025;
   background: -moz-linear-gradient(180deg, #bd1025 5%, #272727 35%);
@@ -8154,18 +8209,36 @@ h6 {
   background: linear-gradient(180deg, #bd1025 5%, #272727 35%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bd1025",endColorstr="#272727",GradientType=1);
 }
+@media only screen and (min-width: 1024px) {
+  .programas {
+    padding: 0 0 30rem 0;
+  }
+}
 .programas .programa-header {
   width: 100%;
-  font-size: 2.7rem;
-  margin-bottom: 15rem;
+  font-size: 2rem;
+  margin-bottom: 5rem;
+}
+@media only screen and (min-width: 640px) {
+  .programas .programa-header {
+    font-size: 2.7rem;
+    margin-bottom: 15rem;
+  }
 }
 .programas .programa-header__title {
-  font-size: 10.9rem;
+  font-size: 5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 100;
   padding: 0 0 0 0;
   border-bottom: solid 1px #011109;
-  transform: rotate(270deg);
+  text-align: center;
+}
+@media only screen and (min-width: 640px) {
+  .programas .programa-header__title {
+    font-size: 10.9rem;
+    transform: rotate(270deg);
+    text-align: left;
+  }
 }
 .programas .programa-header__desc {
   line-height: 1.3em;
@@ -8176,21 +8249,48 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 640px) {
+  .plan {
+    width: 100%;
+    font-size: 8rem;
+    flex-wrap: nowrap;
+  }
 }
 .plan .plan__title {
-  width: 55%;
-  font-size: 8rem;
+  width: 100%;
+  font-size: 4rem;
   font-weight: 100;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 10rem 0 0;
+  padding: 0 2rem;
+}
+@media only screen and (min-width: 640px) {
+  .plan .plan__title {
+    width: 55%;
+    font-size: 6rem;
+    padding: 0 5rem 0 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .plan .plan__title {
+    width: 55%;
+    font-size: 8rem;
+    padding: 0 10rem 0 0;
+  }
 }
 .plan .plan__img {
   display: flex;
-  width: 45%;
+  width: 100%;
   justify-content: flex-end;
   align-items: center;
+}
+@media only screen and (min-width: 640px) {
+  .plan .plan__img {
+    width: 45%;
+  }
 }
 .plan .plan__img img {
   max-width: 100%;
@@ -8198,14 +8298,24 @@ h6 {
 .plan .plan__subtitle {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   line-height: 0.7em;
 }
+@media only screen and (min-width: 640px) {
+  .plan .plan__subtitle {
+    justify-content: center;
+  }
+}
 .plan .plan__subtitle span {
   width: 100%;
-  text-align: right;
+  text-align: center;
+}
+@media only screen and (min-width: 640px) {
+  .plan .plan__subtitle span {
+    text-align: right;
+  }
 }
 
 .plan-card {
@@ -8228,28 +8338,59 @@ h6 {
 .plan-card .plan-card__title {
   text-align: center;
   color: #bd1025;
-  font-size: 6rem;
-  max-width: 60%;
+  font-size: 4rem;
+  max-width: 100%;
   margin: 0 auto 2rem auto;
+}
+@media only screen and (min-width: 640px) {
+  .plan-card .plan-card__title {
+    max-width: 100%;
+    font-size: 6rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .plan-card .plan-card__title {
+    max-width: 60%;
+  }
 }
 .plan-card .plan-card__title.plan-card__title--white {
   color: #d4f1e2;
 }
 .plan-card .plan-card__desc {
   text-align: center;
-  max-width: 65%;
+  max-width: 100%;
   margin: 0 auto;
   line-height: 1.5em;
+}
+@media only screen and (min-width: 640px) {
+  .plan-card .plan-card__desc {
+    max-width: 65%;
+  }
 }
 
 .method {
   width: 100%;
   background: #d4f1e2;
   margin: 0;
-  padding: 0 0 20rem 0;
+  padding: 0 0 8rem 0;
 }
-.method .method__container:nth-of-type(2n) {
-  padding-top: 15rem;
+@media only screen and (min-width: 1024px) {
+  .method {
+    padding: 0 0 20rem 0;
+  }
+}
+.method .method__container {
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 1024px) {
+  .method .method__container {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .method .method__container:nth-of-type(2n) {
+    padding-top: 15rem;
+  }
 }
 .method .method__number {
   width: 20rem;
@@ -8274,22 +8415,50 @@ h6 {
   transform: translate(-50%, -50%);
 }
 .method .method__title {
-  font-size: 3.2rem;
+  font-size: 2.5rem;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   margin: 4rem 0;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .method .method__title {
+    font-size: 3.2rem;
+    text-align: left;
+    margin: 4rem 0;
+  }
 }
 .method .method__desc {
   font-size: 1.8rem;
   line-height: 1.5em;
-  padding: 0 4rem 0 0;
+  padding: 0 0 0 0;
+  text-align: center;
+}
+@media only screen and (min-width: 1024px) {
+  .method .method__desc {
+    padding: 0 4rem 0 0;
+    text-align: left;
+  }
 }
 
 .powered {
   width: 100%;
   background: #272727;
   margin: 0;
-  padding: 0 0 15rem 0;
+  padding: 0 0 5rem 0;
+}
+@media only screen and (min-width: 640px) {
+  .powered {
+    padding: 0 0 15rem 0;
+  }
+}
+.powered .powered__img {
+  margin-bottom: 4rem;
+}
+@media only screen and (min-width: 640px) {
+  .powered .powered__img {
+    margin-bottom: 0;
+  }
 }
 
 .header-world {
@@ -8308,13 +8477,44 @@ h6 {
   line-height: 1.4em;
 }
 
+.unete {
+  background-color: #000;
+  color: #d4f1e2;
+  margin: 0;
+  padding: 0 0 4rem 0;
+  font-size: 1.8rem;
+}
+
 .unete__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
-.unete__buttons .btn:first-of-type {
-  margin-right: 5rem;
+@media only screen and (min-width: 640px) {
+  .unete__buttons {
+    flex-wrap: nowrap;
+  }
+}
+.unete__buttons .btn {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+@media only screen and (min-width: 640px) {
+  .unete__buttons .btn {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .unete__buttons .btn {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 640px) {
+  .unete__buttons .btn:first-of-type {
+    margin-right: 5rem;
+  }
 }
 
 .unete__desc {

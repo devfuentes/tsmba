@@ -2,5 +2,15 @@
   width: 100%;
   background: $grey;
   margin: 0;
-  padding: 0 0 15rem 0;
+  padding: 0 0 5rem 0;
+  @include response-min($m) {
+    padding: 0 0 15rem 0;
+  }
+
+  .powered__img {
+    margin-bottom: 4rem;
+    @include response-min($m) {
+      margin-bottom: 0;
+    }
+  }
 }

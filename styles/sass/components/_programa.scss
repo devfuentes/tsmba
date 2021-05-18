@@ -1,6 +1,6 @@
 .programas {
   width: 100%;
-  padding: 0 0 30rem 0;
+  padding: 0 0 15rem 0;
   margin: 0;
   background: rgb(189, 16, 37);
   background: -moz-linear-gradient(
@@ -19,20 +19,32 @@
     rgba(39, 39, 39, 1) 35%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bd1025",endColorstr="#272727",GradientType=1);
-
+  @include response-min($l) {
+    padding: 0 0 30rem 0;
+  }
   .programa-header {
     width: 100%;
-    font-size: 2.7rem;
-    margin-bottom: 15rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    @include response-min($m) {
+      font-size: 2.7rem;
+      margin-bottom: 15rem;
+    }
   }
 
   & .programa-header__title {
-    font-size: 10.9rem;
+    font-size: 5rem;
     font-family: $primary-font;
     font-weight: $thin-font;
     padding: 0 0 0 0;
     border-bottom: solid 1px $black;
-    transform: rotate(270deg);
+    text-align: center;
+
+    @include response-min($m) {
+      font-size: 10.9rem;
+      transform: rotate(270deg);
+      text-align: left;
+    }
   }
 
   & .programa-header__desc {
