@@ -46,7 +46,7 @@
     & .nav {
       width: 100%;
       justify-self: center;
-      // display: none;
+      display: none;
       @include response-min($l) {
         display: initial;
       }

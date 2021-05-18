@@ -52,9 +52,11 @@
     margin: 2rem 0 0 0;
     list-style: none;
     text-align: center;
+    @include response-min($m) {
+      text-align: left;
+    }
     @include response-min($l) {
       margin: 3rem 0 0 0;
-      text-align: left;
     }
     li {
       margin-bottom: 1rem;

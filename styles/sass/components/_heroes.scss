@@ -88,7 +88,10 @@
   & .heroes__info {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    @include response-min($l) {
+      justify-content: space-between;
+    }
   }
 
   & .heroes__brands {
