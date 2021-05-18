@@ -11,9 +11,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     @include response-min($l) {
       justify-content: initial;
+      flex-wrap: nowrap;
     }
 
     & .navigation__logo {
@@ -46,21 +48,54 @@
     & .nav {
       width: 100%;
       justify-self: center;
-      display: none;
+      // display: none;
+      background: $black;
+      z-index: 3;
+      margin-top: 2rem;
+      width: 100%;
+      padding: 2rem 0;
       @include response-min($l) {
+        margin-top: 0;
         display: initial;
+        padding: 0;
       }
 
       & .nav__list {
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
-        transform: translateX(-10%);
+
         list-style: none;
         text-transform: uppercase;
         display: flex;
         justify-content: space-between;
         padding: 0;
+        flex-wrap: wrap;
+        background: $black;
+        @include response-min($l) {
+          width: 60%;
+          flex-wrap: nowrap;
+          transform: translateX(-10%);
+          background: initial;
+        }
 
+        & .nav__item {
+          width: 100%;
+          text-align: center;
+          margin: 0 0 2rem 0;
+          @include response-min($l) {
+            margin-bottom: 0;
+            width: auto;
+          }
+
+          &.nav__item--disabled {
+            opacity: 0.3;
+            span {
+              &:hover {
+                border-bottom: 0;
+              }
+            }
+          }
+        }
         & .nav__link {
           color: $light-green;
           font-size: 1.4rem;

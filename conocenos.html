@@ -22,12 +22,14 @@
               </a>
             </div>
             <div class="navigation__icon">
-              <img src="img/icons/menu.svg" alt="Icono menu móvil" />
+              <img src="img/icons/menu.svg" id="menuOpen" alt="Icono menu móvil" />
+              <img src="img/icons/menu-close.svg" class="hidden" id="menuClose" alt="Icono menu móvil cerrar" />
+
             </div>
-            <nav class="nav">
+            <nav class="nav hidden">
               <ul class="nav__list">
                 <li class="nav__item">
-                  <a href="" class="nav__link ">Home</a>
+                  <a href="index.html" class="nav__link ">Home</a>
                 </li>
                 <li class="nav__item">
                   <a href="conocenos.html" class="nav__link active">Conocénos</a>
@@ -35,15 +37,15 @@
                 <li class="nav__item">
                   <a href="programas.html" class="nav__link">Programas</a>
                 </li>
-                <li class="nav__item">
-                  <a href="selected-professional-heroes.html" class="nav__link">Selected professional heroes</a>
+                <li class="nav__item nav__item--disabled">
+                  <span  class="nav__link">Selected professional heroes</span>
                 </li>
                 <li class="nav__item"><a href="https://www.thesocial.mba/blog" class="nav__link">Blog</a></li>
               </ul>
             </nav>
           </div>
         </div>
-      </div>
+    </div>
     
     </div>
     <header class="header header--conocenos">
@@ -417,6 +419,7 @@ No hay posibilidad de devolución si has superado el 30% del mismo.
         </div>
       </div>
     </footer>
+
   </body>
 
   <script>
@@ -439,6 +442,25 @@ No hay posibilidad de devolución si has superado el 30% del mismo.
           }
         });
       }
+
+      var menuOpen = document.querySelector('#menuOpen');
+      var menuClose = document.querySelector('#menuClose');
+      var menu = document.querySelector('.nav');
+
+      function openMenu(){
+        this.classList.add('hidden');
+        menuClose.classList.remove('hidden')
+        menu.classList.remove('hidden')
+      }
+
+      function closeMenu(){
+        this.classList.add('hidden');
+        menuOpen.classList.remove('hidden')
+        menu.classList.add('hidden')
+      }
+
+      menuOpen.addEventListener('click', openMenu, false);
+      menuClose.addEventListener('click', closeMenu, false);
     });
   </script>
 </html>

@@ -7073,10 +7073,12 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media only screen and (min-width: 1024px) {
   .nav-container .navigation {
     justify-content: initial;
+    flex-wrap: nowrap;
   }
 }
 .nav-container .navigation .navigation__logo {
@@ -7113,22 +7115,54 @@ h6 {
 .nav-container .navigation .nav {
   width: 100%;
   justify-self: center;
-  display: none;
+  background: #011109;
+  z-index: 3;
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2rem 0;
 }
 @media only screen and (min-width: 1024px) {
   .nav-container .navigation .nav {
+    margin-top: 0;
     display: initial;
+    padding: 0;
   }
 }
 .nav-container .navigation .nav .nav__list {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
-  transform: translateX(-10%);
   list-style: none;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
   padding: 0;
+  flex-wrap: wrap;
+  background: #011109;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation .nav .nav__list {
+    width: 60%;
+    flex-wrap: nowrap;
+    transform: translateX(-10%);
+    background: initial;
+  }
+}
+.nav-container .navigation .nav .nav__list .nav__item {
+  width: 100%;
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+@media only screen and (min-width: 1024px) {
+  .nav-container .navigation .nav .nav__list .nav__item {
+    margin-bottom: 0;
+    width: auto;
+  }
+}
+.nav-container .navigation .nav .nav__list .nav__item.nav__item--disabled {
+  opacity: 0.3;
+}
+.nav-container .navigation .nav .nav__list .nav__item.nav__item--disabled span:hover {
+  border-bottom: 0;
 }
 .nav-container .navigation .nav .nav__list .nav__link {
   color: #a4bcb0;
@@ -7358,9 +7392,14 @@ h6 {
 }
 .features .feature__desc,
 .features .feature__list {
-  padding: 0 0 0 3.5rem;
   font-size: 1.8rem;
   line-height: calc(1em + 10px);
+}
+@media only screen and (min-width: 640px) {
+  .features .feature__desc,
+.features .feature__list {
+    padding: 0 0 0 3.5rem;
+  }
 }
 .features .feature__list--numbers {
   padding: 0 0 0 5.5rem;
@@ -8468,13 +8507,20 @@ h6 {
 }
 
 .page-content {
-  padding: 10rem;
   margin: 0;
   width: 100%;
   background: #000;
   color: #d4f1e2;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   line-height: 1.4em;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+@media only screen and (min-width: 1024px) {
+  .page-content {
+    padding: 10rem;
+  }
 }
 
 .unete {
@@ -8526,6 +8572,10 @@ h6 {
 
 .circle-list {
   list-style-type: circle;
+}
+
+.hidden {
+  display: none;
 }
 
 .red-color {

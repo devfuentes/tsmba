@@ -49,9 +49,11 @@
 
   & .feature__desc,
   .feature__list {
-    padding: 0 0 0 3.5rem;
     font-size: 1.8rem;
     line-height: calc(1em + 10px);
+    @include response-min($m) {
+      padding: 0 0 0 3.5rem;
+    }
   }
 
   .feature__list--numbers {
