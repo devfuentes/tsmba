@@ -80,7 +80,7 @@
 
       position: relative;
       @include response-min($m) {
-        height: calc(100% - 15rem);
+        height: calc(100% - 10rem);
       }
       &::before {
         content: "";
@@ -121,6 +121,7 @@
     width: 100%;
     height: auto;
     margin: 0 0 3rem 0;
+    display: none;
     img {
       width: 100%;
       object-fit: cover;

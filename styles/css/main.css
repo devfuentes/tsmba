@@ -7809,7 +7809,7 @@ h6 {
 }
 @media only screen and (min-width: 640px) {
   .timeline .timeline__article.timeline__article--quote {
-    height: calc(100% - 15rem);
+    height: calc(100% - 10rem);
   }
 }
 .timeline .timeline__article.timeline__article--quote::before {
@@ -7850,6 +7850,7 @@ h6 {
   width: 100%;
   height: auto;
   margin: 0 0 3rem 0;
+  display: none;
 }
 .timeline .timeline__img img {
   width: 100%;
@@ -8111,7 +8112,7 @@ h6 {
 }
 @media only screen and (min-width: 1024px) {
   .title-section.title-section--method {
-    margin: -4rem 0 25rem 0;
+    margin: -11rem 0 25rem 0;
   }
 }
 
@@ -8321,7 +8322,7 @@ h6 {
   }
 }
 .plan .plan__img {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: flex-end;
   align-items: center;
@@ -8447,11 +8448,8 @@ h6 {
   position: relative;
   overflow: hidden;
 }
-.method .method__number span {
-  position: absolute;
-  top: 45%;
-  left: 45%;
-  transform: translate(-50%, -50%);
+.method .method__number img {
+  max-width: 100px;
 }
 .method .method__title {
   font-size: 2.5rem;
