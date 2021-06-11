@@ -7579,7 +7579,7 @@ h6 {
 
 .testimonials {
   width: 100%;
-  background: #272727;
+  background: #008081;
   position: relative;
   margin: 0;
 }
@@ -7595,7 +7595,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #d4f1e2;
+  color: #011109;
 }
 .testimonials .testimonial__image {
   position: relative;
@@ -7605,7 +7605,7 @@ h6 {
 .testimonials .testimonial__img {
   width: 100%;
   max-width: 250px;
-  border: solid 1px #bd1025;
+  border: solid 1px #011109;
   border-radius: 50%;
   padding: 1rem;
   display: block;
@@ -7624,7 +7624,7 @@ h6 {
   width: 90%;
   font-size: 1.8rem;
   text-align: center;
-  font-weight: 100;
+  font-weight: 400;
   margin: 0 0 3rem 0;
 }
 .testimonials .testimonial__arrow {
@@ -8054,26 +8054,26 @@ h6 {
   width: 300%;
   background: #d4f1e2;
 }
-.title-section.title-section--testomonios {
+.title-section.title-section--testimonios {
   margin-bottom: 5rem;
   width: 100%;
   max-width: 100%;
   overflow: hidden;
 }
-.title-section.title-section--testomonios span {
-  color: #272727;
+.title-section.title-section--testimonios span {
+  color: #008081;
 }
-.title-section.title-section--testomonios span::after {
+.title-section.title-section--testimonios span::after {
   background: #272727;
   left: 200%;
   width: 200%;
 }
-.title-section.title-section--testomonios span:last-of-type {
+.title-section.title-section--testimonios span:last-of-type {
   align-self: flex-end;
   color: #011109;
   padding-right: 20%;
 }
-.title-section.title-section--testomonios span:last-of-type::after {
+.title-section.title-section--testimonios span:last-of-type::after {
   left: -149.5%;
   width: 300%;
   background: #011109;

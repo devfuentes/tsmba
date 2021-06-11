@@ -115,13 +115,13 @@
     }
   }
 
-  &.title-section--testomonios {
+  &.title-section--testimonios {
     margin-bottom: 5rem;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
     span {
-      color: $grey;
+      color: $green;
       &::after {
         background: $grey;
         left: 200%;
