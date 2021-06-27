@@ -24,9 +24,9 @@
         width: 10%;
       }
       img {
-        width: 100px;
+        width: 95px;
         @include response-min($l) {
-          width: 100px;
+          width: 95px;
         }
       }
     }
